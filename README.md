@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏟️ Arena Vincere
+# 🏟️ 
 
 **Sistema profissional de salas HaxBall com bot Discord, cargos persistentes, moderação automatizada, replay upload e clipes em GIF.**
 
