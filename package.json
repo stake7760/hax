@@ -1,0 +1,37 @@
+{
+  "name": "arena-vincere",
+  "version": "2.0.0",
+  "description": "Sistema de salas HaxBall com Discord bot, GIF clipping e multi-salas",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "postinstall": "node scripts/patch-haxball.js",
+    "sync": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync-vps.ps1",
+    "sync:full": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync-vps.ps1 -Full"
+  },
+  "keywords": [
+    "haxball"
+  ],
+  "author": "Fusion",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "form-data": "^4.0.2",
+    "haxball-extended-room": "^3.0.0",
+    "haxball.js": "^4.0.3",
+    "puppeteer": "^24.0.0",
+    "undici": "^7.5.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.0"
+  }
+}
